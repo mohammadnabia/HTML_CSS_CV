@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("./assets/times new roman.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("./assets/times new roman bold.ttf");
+    font-weight: bold;
+}
+
+html {
+    font-size: 13px;
+}
+
+body {
+    direction: ltr;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Vazir, Tahoma, Helvetica, sans-serif;
+    background: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 68rem;
+    margin: 1.5rem auto;
+    display: flex;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-sm {
+    font-size: 11px;
+}
+
+.text-lg {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.text-xl {
+    font-size: 3rem;
+}
+
+.text-gray {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.text-dark-gray {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.label {
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 0.84615385rem;
+    margin: 0.25rem 0 0.25rem 0.5rem;
+    padding: 3px 10px;
+}
+
+.label .details {
+    margin-right: 10px;
+    opacity: 0.8;
+    display: inline-block;
+}
+
+
+/* ====== Sidebar ====== */
+
+.sidebar {
+    position: relative;
+    color: #fff;
+    padding: 1.5em 1.5em 30em;
+    width: 31.25%;
+    display: inline-block;
+}
+
+.sidebar-back-color {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #00658d;
+    z-index: -1;
+}
+
+.sidebar-back-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url("./assets/1.svg") center bottom 0rem / 100% no-repeat;
+    z-index: -1;
+}
+
+.avatar {
+    margin-bottom: 1px;
+    max-width: 100%;
+    padding-bottom: 5px;
+}
+
+.avatar img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 0.1em solid rgb(56, 56, 56);
+    border-radius: 20%;
+}
+
+.sidebar-section {
+    margin-bottom: 22px;
+}
+
+.sidebar-section .row {
+    margin-bottom: 8px;
+}
+
+.contact-info i {
+    padding-left: 10px;
+}
+
+.contact-info .row {
+    display: flex;
+    align-items: center;
+}
+
+.personal-info .row,
+.job-info .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-links .links a {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.social-links .links a i {
+    font-size: 20px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.linkedin {
+    color: #4183c4;
+}
+
+.github {
+    color: #1b1c1d;
+}
+
+.twitter {
+    color: #09c;
+}
+
+
+/* ====== Main ====== */
+
+.main {
+    width: 68.75%;
+    background-color: #fff;
+}
+
+.name {
+    padding: 3em 3em 4em 0;
+    background-color: #709bc585;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.name small {
+    color: #00658d;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.main-section {
+    margin-bottom: 10px;
+}
+
+.main-section .section-header {
+    border-bottom: 1px solid #ccc;
+    background-color: #435d773b;
+}
+
+.main-section .section-header h2 {
+    display: inline-block;
+    border-bottom: 2px solid #ccc;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.job-experiences .items,
+.education .items {
+    padding-left: 10px;
+}
+
+.job-experiences .item,
+.education .item {
+    display: flex;
+    margin: 1.5em 0;
+}
+
+.job-experiences .item .content,
+.education .item .content {
+    padding-left: 10px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.job-experiences .item .content .row,
+.education .item .content .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job-experiences .extra,
+.education .extra {
+    margin-top: 5px;
+}
+
+.education .label {
+    margin: 0;
+}
+
+.skills {
+    padding-left: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.skill {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    width: 100px;
+    text-align: left;
+}
+
+.skill-progress {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.bar {
+    color: rgba(241, 241, 241, 0.918);
+    border-radius: 3px;
+}
+
+.bar>div {
+    text-align: left;
+    padding-right: 1px;
+}
+
+.other-skills {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.other-skills .label {
+    color: #fff;
+}
+
+.technical-skills h4 {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.other {
+    display: flex;
+}
+
+.other>div {
+    width: 50%;
+}
+
+.circle {
+    background-color: #e8e8e8;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.circle-group {
+    display: flex;
+}
+
+.circle.olive {
+    background-color: #b5cc18;
+}
+
+.language .content {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.language .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
