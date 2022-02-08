@@ -11,7 +11,7 @@ The font used in the resume is "times new roman" and the font file is also in th
 ## Output Demo
 
 <p align="center">
-  <img src="output.png" width="500" title="hover text">
+  <img src="./assets/output.png" width="500" title="hover text">
 </p>
 
 ## Credits
